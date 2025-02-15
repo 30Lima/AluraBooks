@@ -1,4 +1,9 @@
-.logo {
-  display: flex;
-  
+.App{
+    width: 100vw;
+    heigth: 100vh;
+    background-image: linear-gradient(90deg, #002F52 35%, #326589);
+}
+
+.App-header{
+    background-color: #FFF;
 }
