@@ -1,18 +1,28 @@
-import './App.css';
-import logo from './images/logo.svg'
+import Header from "./components/Header/index.js";
+import Pesquisa from "./components/Pesquisa/index.js";
+import styled from 'styled-components'
+import UltimosLancamentos from "./components/UltimosLancamentos/index.js";
+
+const AppContainer = styled.div `
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg,rgb(255, 255, 255) 35%,rgb(255, 255, 255));
+
+    li {
+      list-style: none;
+    }
+`
 
 function App() {
   return (
-    <div className = "App">
-      <header className='App-header'>
-        <div className='logo'>
-          <img src={logo} alt='logo'></img>
-          <p><strong>Alura</strong>Books</p>
-
-        </div>
-      </header>
-    </div>
+    <AppContainer>
+      <Header/>
+      <Pesquisa/>
+      <UltimosLancamentos/>
+    </AppContainer>
+    
   );
 }
 
 export default App;
+
